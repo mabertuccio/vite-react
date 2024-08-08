@@ -1,0 +1,27 @@
+.article {
+  border-radius: 5px;
+  background: lightyellow;
+  padding: 10px;
+}
+
+.article-header {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.articles-list {
+  list-style: none;
+  padding: 0;
+}
+
+.articles-list-item {
+  margin-bottom: 40px;
+  color: black;
+}
+
+.main-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
