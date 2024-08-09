@@ -4,8 +4,8 @@ import "./index.css";
 // import Welcome from "./components/Welcome.jsx";
 // import Button from "./components/Button.jsx";
 // import Page from "./components/Page.jsx";
-import { LikeButton } from "./components/LikeButton.jsx";
-
+// import { LikeButton } from "./components/LikeButton.jsx";
+import { ToDoList } from "./components/ToDoList.jsx";
 /*
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -41,8 +41,16 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 );
 */
 
+/*
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <LikeButton />
+  </React.StrictMode>
+);
+*/
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <ToDoList />
   </React.StrictMode>
 );
