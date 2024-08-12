@@ -5,7 +5,8 @@ import "./index.css";
 // import Button from "./components/Button.jsx";
 // import Page from "./components/Page.jsx";
 // import { LikeButton } from "./components/LikeButton.jsx";
-import { ToDoList } from "./components/ToDoList.jsx";
+// import { ToDoList } from "./components/ToDoList.jsx";
+import { Card } from "./components/Card";
 /*
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -49,8 +50,20 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 );
 */
 
+/*
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ToDoList />
+  </React.StrictMode>
+);
+*/
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <Card
+      img="https://avatars.githubusercontent.com/u/129182481?v=4"
+      name="Matias Bertuccio"
+      position="Student"
+    />
   </React.StrictMode>
 );
