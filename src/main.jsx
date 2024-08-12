@@ -6,7 +6,8 @@ import "./index.css";
 // import Page from "./components/Page.jsx";
 // import { LikeButton } from "./components/LikeButton.jsx";
 // import { ToDoList } from "./components/ToDoList.jsx";
-import { Card } from "./components/Card";
+// import { Card } from "./components/Card.jsx";
+import { BlogSpot } from "./components/BlogPost.jsx";
 /*
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -58,12 +59,28 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 );
 */
 
+/*
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Card
       img="https://avatars.githubusercontent.com/u/129182481?v=4"
       name="Matias Bertuccio"
       title="Student"
+      paragraphs="Hello, World!"
+    />
+  </React.StrictMode>
+);
+*/
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <BlogSpot
+      title="Squirrels in Argentina."
+      paragraphs={[
+        "Today I saw a squirrel.",
+        "The squirrel was black, larger than other squirrels, had many big teeth, and was always walking on all fours, wagging its tail.",
+        "I think it might have been a dog, since there are no squirrels in Argentina.",
+      ]}
     />
   </React.StrictMode>
 );
