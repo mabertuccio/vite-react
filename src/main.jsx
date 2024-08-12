@@ -63,7 +63,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Card
       img="https://avatars.githubusercontent.com/u/129182481?v=4"
       name="Matias Bertuccio"
-      position="Student"
+      title="Student"
     />
   </React.StrictMode>
 );

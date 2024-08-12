@@ -7,7 +7,7 @@ export function Card(props) {
       <img src={props.img} alt="Profile picture" className="card-img" />
       <div className="card-data">
         <header className="card-data-header">{props.name}</header>
-        <span className="card-data-span">{props.position}</span>
+        <span className="card-data-span">{props.title}</span>
       </div>
     </div>
   );
@@ -16,7 +16,7 @@ export function Card(props) {
 Card.propTypes = {
   img: PropTypes.string,
   name: PropTypes.string,
-  position: PropTypes.string,
+  title: PropTypes.string,
 };
 
 export default Card;
