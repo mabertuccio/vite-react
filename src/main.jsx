@@ -7,7 +7,10 @@ import "./index.css";
 // import { LikeButton } from "./components/LikeButton.jsx";
 // import { ToDoList } from "./components/ToDoList.jsx";
 // import { Card } from "./components/Card.jsx";
-import { BlogSpot } from "./components/BlogPost.jsx";
+// import { BlogSpot } from "./components/BlogPost.jsx";
+// import { MatchName } from "./components/MatchName.jsx";
+// import { MatchLength } from "./components/MatchLength.jsx";
+import { InputValidation } from "./components/InputValidation.jsx";
 /*
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -72,6 +75,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 );
 */
 
+/*
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BlogSpot
@@ -82,5 +86,28 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         "I think it might have been a dog, since there are no squirrels in Argentina.",
       ]}
     />
+  </React.StrictMode>
+);
+*/
+
+/*
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <MatchName name="Matias" />
+  </React.StrictMode>
+);
+*/
+
+/*
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <MatchLength minLength="10" />
+  </React.StrictMode>
+);
+*/
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <InputValidation />
   </React.StrictMode>
 );
