@@ -10,7 +10,9 @@ import "./index.css";
 // import { BlogSpot } from "./components/BlogPost.jsx";
 // import { MatchName } from "./components/MatchName.jsx";
 // import { MatchLength } from "./components/MatchLength.jsx";
-import { InputValidation } from "./components/InputValidation.jsx";
+// import { InputValidation } from "./components/InputValidation.jsx";
+// import { UncontrolledCheckbox } from "./components/UncontrolledCheckbox.jsx";
+import { ControlledCheckboxList } from "./components/ControlledCheckboxList.jsx";
 /*
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -106,8 +108,31 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 );
 */
 
+/*
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <InputValidation />
+  </React.StrictMode>
+);
+*/
+
+/*
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <UncontrolledCheckbox name="it's Summer?" initialValue={false} />
+  </React.StrictMode>
+);
+*/
+/*
+Note: I had a small bug at the beginning. 
+When trying to render the component, the value was always true because I was assigning the boolean prop incorrectly, like this: initialValue = "false". 
+This is because the value is interpreted as a string, not a boolean.
+*/
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <ControlledCheckboxList
+      items={{ ["Go"]: false, ["Java"]: true, ["JavaScript"]: false }}
+    />
   </React.StrictMode>
 );
