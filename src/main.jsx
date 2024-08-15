@@ -12,7 +12,9 @@ import "./index.css";
 // import { MatchLength } from "./components/MatchLength.jsx";
 // import { InputValidation } from "./components/InputValidation.jsx";
 // import { UncontrolledCheckbox } from "./components/UncontrolledCheckbox.jsx";
-import { ControlledCheckboxList } from "./components/ControlledCheckboxList.jsx";
+// import { ControlledCheckboxList } from "./components/ControlledCheckboxList.jsx";
+// import { ControlledCheckbox } from "./components/ControlledCheckbox.jsx";
+import { CheckboxListWithState } from "./components/CheckboxListWithState.jsx";
 /*
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -129,9 +131,27 @@ When trying to render the component, the value was always true because I was ass
 This is because the value is interpreted as a string, not a boolean.
 */
 
+/*
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ControlledCheckboxList
+      items={{ ["Go"]: true, ["Java"]: true, ["JavaScript"]: true }}
+    />
+  </React.StrictMode>
+);
+*/
+
+/*
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <ControlledCheckbox name="Today is Friday?" value={false} />
+  </React.StrictMode>
+);
+*/
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <CheckboxListWithState
       items={{ ["Go"]: false, ["Java"]: true, ["JavaScript"]: false }}
     />
   </React.StrictMode>
