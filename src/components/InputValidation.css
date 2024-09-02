@@ -1,0 +1,11 @@
+.input {
+  border-color: #dc3545;
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.input-match {
+  border-color: #28a745;
+  background-color: #d4edda;
+  color: #155724;
+}
